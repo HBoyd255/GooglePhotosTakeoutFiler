@@ -1,0 +1,21 @@
+
+start with two folders,
+Input - The collection of media fresh out of takeout
+Output - the folder that the media will be filed into.
+
+iterate through every non json file,
+
+get the accompanying json file
+
+get the timestamp from the json file
+
+set the modified date based on this timestamp
+move and rename the file
+
+if a file with the same name exists, do a MD5 compare to identify if they
+are unique.
+
+if the files are different, number them.
+
+move each file into a directory named after its year any month,
+for example a photo from april 2021 would be placed in Output/2021/04
